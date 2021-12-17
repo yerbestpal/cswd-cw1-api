@@ -371,7 +371,7 @@ router.post('/itineraries/stages/update/:user/:stage', function(req, res) {
 
 /* GET delete itinerary stage */
 /* doesn't check for valid hostel id */
-router.post('/itineraries/stages/update/:user/:stage', function(req, res) { 
+router.get('/itineraries/stages/delete/:user/:stage', function(req, res) { 
     stagenumber = req.params["stage"];
     var user = req.params["user"];
     var itinerary = itineraries.find(x => x.user == user);
